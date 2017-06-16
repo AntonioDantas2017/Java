@@ -1,0 +1,33 @@
+<%@page import="java.sql.*"%>
+
+    <%
+
+            Connection con; 
+            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+            con=DriverManager.getConnection("jdbc:odbc:Banco","",""); 
+	       Statement st=con.createStatement();
+    
+     Connection con2; 
+            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+            con2=DriverManager.getConnection("jdbc:odbc:Banco","",""); 
+	       Statement st2=con2.createStatement();
+    %>
+    
+<style type="text/css">
+
+.linkA
+{
+    COLOR: #000000;
+    FONT-FAMILY: verdana;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none
+}
+
+.linkA2
+{
+    COLOR: #000000;
+    FONT-FAMILY: verdana;
+    FONT-SIZE: 25px;
+    TEXT-DECORATION: none
+}
+</style>
